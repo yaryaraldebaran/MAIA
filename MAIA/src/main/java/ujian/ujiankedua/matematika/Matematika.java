@@ -3,7 +3,7 @@ package ujian.ujiankedua.matematika;
 public class Matematika {
 	public double penjumlahan(double nilaiA, double nilaiB) {
 		double hasil = nilaiA*Math.pow(nilaiB, 0)+nilaiB*Math.pow(nilaiB, 0);
-		System.out.println("hasil pengurangan "+nilaiA+" oleh "+nilaiB+" adalah "+hasil);
+		System.out.println("hasil penjumlahan "+nilaiA+" oleh "+nilaiB+" adalah "+hasil);
 		return hasil;
 	}
 	public double pengurangan(double nilaiA, double nilaiB) {
@@ -19,7 +19,7 @@ public class Matematika {
 	
 	public int modulus(int num, int divisor) {
 		int rem = (num-divisor*(num/divisor));
-		System.out.println("sisanya adalah "+ rem);
+		System.out.printf("%d modulo %d sisanya adalah %d \n",num,divisor,rem);
 		return rem;
 	}
 }

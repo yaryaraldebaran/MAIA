@@ -1,29 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-05T20:13:13 ICT" name="Default suite" finished-at="2022-09-05T20:13:14 ICT" duration-ms="50">
+  <suite started-at="2022-09-06T11:48:47 ICT" name="Suite" finished-at="2022-09-06T11:48:47 ICT" duration-ms="98">
     <groups>
     </groups>
-    <test started-at="2022-09-05T20:13:13 ICT" name="Default test" finished-at="2022-09-05T20:13:14 ICT" duration-ms="50">
-      <class name="ujian.ujiankedua.geometri.GeometriTest">
-        <test-method is-config="true" signature="befTest()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@156b88f5]" started-at="2022-09-05T20:13:13 ICT" name="befTest" finished-at="2022-09-05T20:13:14 ICT" duration-ms="9" status="PASS">
+    <test started-at="2022-09-06T11:48:47 ICT" name="Test" finished-at="2022-09-06T11:48:47 ICT" duration-ms="98">
+      <class name="ujian.ujiankedua.matematika.MatematikaTest">
+        <test-method is-config="true" signature="befTest()[pri:0, instance:ujian.ujiankedua.matematika.MatematikaTest@6da21078]" started-at="2022-09-06T11:48:47 ICT" name="befTest" finished-at="2022-09-06T11:48:47 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- befTest -->
-        <test-method signature="luasPersegiTest()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@156b88f5]" started-at="2022-09-05T20:13:14 ICT" name="luasPersegiTest" finished-at="2022-09-05T20:13:14 ICT" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="befC()[pri:0, instance:ujian.ujiankedua.matematika.MatematikaTest@6da21078]" started-at="2022-09-06T11:48:47 ICT" name="befC" finished-at="2022-09-06T11:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befC -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankedua.matematika.MatematikaTest@6da21078]" started-at="2022-09-06T11:48:47 ICT" name="befMethod" finished-at="2022-09-06T11:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method signature="penjumlahanTest()[pri:0, instance:ujian.ujiankedua.matematika.MatematikaTest@6da21078]" started-at="2022-09-06T11:48:47 ICT" name="penjumlahanTest" finished-at="2022-09-06T11:48:47 ICT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- penjumlahanTest -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankedua.matematika.MatematikaTest@6da21078]" started-at="2022-09-06T11:48:47 ICT" name="aftMethod" finished-at="2022-09-06T11:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method signature="penguranganTest()[pri:1, instance:ujian.ujiankedua.matematika.MatematikaTest@6da21078]" started-at="2022-09-06T11:48:47 ICT" name="penguranganTest" finished-at="2022-09-06T11:48:47 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- penguranganTest -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankedua.matematika.MatematikaTest@6da21078]" started-at="2022-09-06T11:48:47 ICT" name="befMethod" finished-at="2022-09-06T11:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankedua.matematika.MatematikaTest@6da21078]" started-at="2022-09-06T11:48:47 ICT" name="aftMethod" finished-at="2022-09-06T11:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method signature="pembagianTest()[pri:2, instance:ujian.ujiankedua.matematika.MatematikaTest@6da21078]" started-at="2022-09-06T11:48:47 ICT" name="pembagianTest" finished-at="2022-09-06T11:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pembagianTest -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankedua.matematika.MatematikaTest@6da21078]" started-at="2022-09-06T11:48:47 ICT" name="befMethod" finished-at="2022-09-06T11:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankedua.matematika.MatematikaTest@6da21078]" started-at="2022-09-06T11:48:47 ICT" name="aftMethod" finished-at="2022-09-06T11:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method signature="modulusTest()[pri:3, instance:ujian.ujiankedua.matematika.MatematikaTest@6da21078]" started-at="2022-09-06T11:48:47 ICT" name="modulusTest" finished-at="2022-09-06T11:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modulusTest -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankedua.matematika.MatematikaTest@6da21078]" started-at="2022-09-06T11:48:47 ICT" name="befMethod" finished-at="2022-09-06T11:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankedua.matematika.MatematikaTest@6da21078]" started-at="2022-09-06T11:48:47 ICT" name="aftMethod" finished-at="2022-09-06T11:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="aftC()[pri:0, instance:ujian.ujiankedua.matematika.MatematikaTest@6da21078]" started-at="2022-09-06T11:48:47 ICT" name="aftC" finished-at="2022-09-06T11:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftC -->
+      </class> <!-- ujian.ujiankedua.matematika.MatematikaTest -->
+      <class name="ujian.ujiankedua.geometri.GeometriTest">
+        <test-method is-config="true" signature="befTest()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@22ef9844]" started-at="2022-09-06T11:48:47 ICT" name="befTest" finished-at="2022-09-06T11:48:47 ICT" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befTest -->
+        <test-method is-config="true" signature="befC()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@22ef9844]" started-at="2022-09-06T11:48:47 ICT" name="befC" finished-at="2022-09-06T11:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befC -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@22ef9844]" started-at="2022-09-06T11:48:47 ICT" name="befMethod" finished-at="2022-09-06T11:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method signature="luasPersegiTest()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@22ef9844]" started-at="2022-09-06T11:48:47 ICT" name="luasPersegiTest" finished-at="2022-09-06T11:48:47 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- luasPersegiTest -->
-        <test-method signature="luasSegitigaTest()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@156b88f5]" started-at="2022-09-05T20:13:14 ICT" name="luasSegitigaTest" finished-at="2022-09-05T20:13:14 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@22ef9844]" started-at="2022-09-06T11:48:47 ICT" name="aftMethod" finished-at="2022-09-06T11:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@22ef9844]" started-at="2022-09-06T11:48:47 ICT" name="befMethod" finished-at="2022-09-06T11:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method signature="luasSegitigaTest()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@22ef9844]" started-at="2022-09-06T11:48:47 ICT" name="luasSegitigaTest" finished-at="2022-09-06T11:48:47 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- luasSegitigaTest -->
-        <test-method signature="luasTrapesiumTest()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@156b88f5]" started-at="2022-09-05T20:13:14 ICT" name="luasTrapesiumTest" finished-at="2022-09-05T20:13:14 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@22ef9844]" started-at="2022-09-06T11:48:47 ICT" name="aftMethod" finished-at="2022-09-06T11:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@22ef9844]" started-at="2022-09-06T11:48:47 ICT" name="befMethod" finished-at="2022-09-06T11:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method signature="luasTrapesiumTest()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@22ef9844]" started-at="2022-09-06T11:48:47 ICT" name="luasTrapesiumTest" finished-at="2022-09-06T11:48:47 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- luasTrapesiumTest -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@22ef9844]" started-at="2022-09-06T11:48:47 ICT" name="aftMethod" finished-at="2022-09-06T11:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="aftC()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@22ef9844]" started-at="2022-09-06T11:48:47 ICT" name="aftC" finished-at="2022-09-06T11:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftC -->
       </class> <!-- ujian.ujiankedua.geometri.GeometriTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
