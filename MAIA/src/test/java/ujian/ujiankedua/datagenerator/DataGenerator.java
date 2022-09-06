@@ -3,8 +3,10 @@ package ujian.ujiankedua.datagenerator;
 import java.nio.charset.Charset;
 import java.util.Random;
 
+import javax.print.attribute.standard.DateTimeAtCompleted;
+
 public class DataGenerator {
-	Random rnd=new Random();
+	Random rnd = new Random();
 	public String strGenerator() {
 		int leftLimit = 48; // letter 'a'
 	    int rightLimit = 122; // letter 'z'
@@ -31,17 +33,23 @@ public class DataGenerator {
 	}
 	public static void main(String[] args) {
 		DataGenerator dtg = new DataGenerator();
-//		System.out.println(dtg.genStr());
+		for(int k =0;k<20;k++) {
+			System.out.println(dtg.genStr());
+		}
+		
 	}
-//	public String genStr() {
-//		String b = "";
-//		while(b.length()<=3) {
-//			int rand= rnd.nextInt(47,123);;
-//			StringBuilder strb = new StringBuilder();
-//			char c = (char) a;
-//			b += strb.append(c).toString();
-//		}
-//		return b;
-//			 
-//	}
+	public String genStr() {
+		String b = "";
+		while(b.length()<2) {
+			int rand= rnd.nextInt(47,123);
+			if ((rand>47&&rand<58)||(rand>96&&rand<123)) {
+				StringBuilder strb = new StringBuilder();
+				char c = (char) rand;
+				b += strb.append(c).toString();
+			}
+
+		}
+		return b;
+			 
+	}
 }
