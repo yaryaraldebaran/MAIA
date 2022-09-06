@@ -22,11 +22,11 @@ public class BelanjaTest {
 	int intLoopAft;
 	@BeforeClass
 	public void befC() {
-		System.out.println("=================INI BEFOR TEST CLASS BELANJA=================\n");
+		System.out.println("=================INI BEFORE TEST CLASS BELANJA=================");
 	}
 	@AfterClass
 	public void aftC() {
-		System.out.println("=================INI AFTER TEST CLASS BELANJA=================\n");
+		System.out.println("=================INI AFTER TEST CLASS BELANJA=================\n\n");
 	}
     @BeforeTest
     public void befTest(){
@@ -59,6 +59,7 @@ public class BelanjaTest {
 		//mengubah nilai diskon menggunakan method overloading
 		double diskonBaru = 50.0;
 		AssertJUnit.assertEquals(blj.kalkulasiDiskon(diskonBaru),2500.0);
+		System.out.println(blj.cekStok()); 
 	}
 	@AfterMethod
 	public void aftMethod() {

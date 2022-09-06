@@ -5,10 +5,12 @@
     <classes>
       <class name="ujian.ujiankedua.parsedata.parseStrToNmrcTest">
         <methods>
+          <include name="befC"/>
           <include name="befTest"/>
           <include name="strToIntTest"/>
-          <include name="aftMethod"/>
+          <include name="aftC"/>
           <include name="befMethod"/>
+          <include name="aftMethod"/>
         </methods>
       </class> <!-- ujian.ujiankedua.parsedata.parseStrToNmrcTest -->
     </classes>

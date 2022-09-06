@@ -23,11 +23,11 @@ public class GeometriTest {
 	double doSisiB;
 	@BeforeClass
 	public void befC() {
-		System.out.println("=================INI TEST CLASS GEOMETRI=================");
+		System.out.println("=================INI BEFORE TEST CLASS GEOMETRI=================");
 	}
 	@AfterClass
 	public void aftC() {
-		System.out.println("=================INI TEST CLASS GEOMETRI=================");
+		System.out.println("=================INI AFTER TEST CLASS GEOMETRI=================\n\n");
 	}
 	
 	@BeforeTest
@@ -41,7 +41,7 @@ public class GeometriTest {
 	}
 	@AfterMethod
 	public void aftMethod() {
-		System.out.println("===============TEST GEOMETRI SELESAI===============");
+		System.out.println("===============TEST GEOMETRI SELESAI===============\n");
 	}
 	
 	

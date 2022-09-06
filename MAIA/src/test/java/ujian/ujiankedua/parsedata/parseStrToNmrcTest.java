@@ -23,11 +23,11 @@ public class parseStrToNmrcTest {
 	DataGenerator dtg;
 	@BeforeClass
 	public void befC() {
-		System.out.println("=================INI TEST CLASS PARSING=================");
+		System.out.println("=================INI BEFORE TEST CLASS PARSING=================");
 	}
 	@AfterClass
 	public void aftC() {
-		System.out.println("=================INI TEST CLASS PARSING=================");
+		System.out.println("=================INI AFTER TEST CLASS PARSING=================\n\n");
 	}
 	@BeforeTest
 	public void befTest() {

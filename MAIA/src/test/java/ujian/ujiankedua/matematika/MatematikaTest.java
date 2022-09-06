@@ -26,11 +26,11 @@ public class MatematikaTest {
 	Random rndm;
 	@BeforeClass
 	public void befC() {
-		System.out.println("=================INI TEST CLASS MATEMATIKA=================");
+		System.out.println("=================INI BEFORE TEST CLASS MATEMATIKA=================");
 	}
 	@AfterClass
 	public void aftC() {
-		System.out.println("=================INI TEST CLASS MATEMATIKA=================");
+		System.out.println("=================INI AFTER TEST CLASS MATEMATIKA=================\n\n");
 	}
 	@BeforeTest
 	public void befTest() {

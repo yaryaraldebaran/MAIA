@@ -31,19 +31,17 @@ public class DataGenerator {
 	}
 	public static void main(String[] args) {
 		DataGenerator dtg = new DataGenerator();
-		System.out.println(dtg.intGenerator(2, 100));
+//		System.out.println(dtg.genStr());
 	}
-	public String genStr() {
-		int a;
-		String b = "";
-		StringBuilder strb = new StringBuilder();
-		for (int i =0; i<3;i++) {
-			a= rnd.nextInt(47,123);
-			if ((a>47&&a<58)||(a>96&&a<123)) {
-				b += strb.append(a).toString();
-			}
-		}
-		return b;
-			 
-	}
+//	public String genStr() {
+//		String b = "";
+//		while(b.length()<=3) {
+//			int rand= rnd.nextInt(47,123);;
+//			StringBuilder strb = new StringBuilder();
+//			char c = (char) a;
+//			b += strb.append(c).toString();
+//		}
+//		return b;
+//			 
+//	}
 }
