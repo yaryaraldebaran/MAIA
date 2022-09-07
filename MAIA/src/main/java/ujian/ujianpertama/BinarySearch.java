@@ -15,6 +15,7 @@ public class BinarySearch {
         while(low<=high)
         {
             med = (low+high)/2;
+            //assign the med
 
             //checking found or not
             if(keyword==val[med])
