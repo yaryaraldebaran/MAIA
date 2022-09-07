@@ -7,6 +7,7 @@ public class AnimalsTest {
 		Cat coco = new Cat("coco");
 		coco.suara();
 		coco.voice();
+		//this is comment trying
 	}
 
 }
