@@ -11,12 +11,11 @@ public class OmnivoraImpl implements Herbivora, Karnivora{
 	public void makanDaging() {
 		System.out.println(this.nama+" makan daging");
 	}
-	@Override
 	public void jalan() {
 		System.out.println("Hewan ini berjalan ");
 		
 	}
-	@Override
+	
 	public void makanSiang() {
 		System.out.println("makan siang");
 		
