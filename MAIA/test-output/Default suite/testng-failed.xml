@@ -3,16 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ujian.ujiankedua.produkoop.BelanjaTest">
+      <class name="latihan.latihanrstassured.DataDrivenTut">
         <methods>
-          <include name="aftC"/>
-          <include name="aftMethod"/>
-          <include name="befMethod"/>
-          <include name="kurangStokProdTest"/>
           <include name="befTest"/>
-          <include name="befC"/>
+          <include name="dataProvTest"/>
         </methods>
-      </class> <!-- ujian.ujiankedua.produkoop.BelanjaTest -->
+      </class> <!-- latihan.latihanrstassured.DataDrivenTut -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

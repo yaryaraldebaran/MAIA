@@ -1,135 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-06T19:39:34 ICT" name="Suite" finished-at="2022-09-06T19:39:34 ICT" duration-ms="163">
+  <suite started-at="2022-09-12T12:51:53 ICT" name="Default suite" finished-at="2022-09-12T12:51:55 ICT" duration-ms="1656">
     <groups>
     </groups>
-    <test started-at="2022-09-06T19:39:34 ICT" name="Test" finished-at="2022-09-06T19:39:34 ICT" duration-ms="163">
-      <class name="ujian.ujiankedua.produkoop.BelanjaTest">
-        <test-method is-config="true" signature="befTest()[pri:0, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="befTest" finished-at="2022-09-06T19:39:34 ICT" duration-ms="2" status="PASS">
+    <test started-at="2022-09-12T12:51:53 ICT" name="Default test" finished-at="2022-09-12T12:51:55 ICT" duration-ms="1656">
+      <class name="latihan.latihanrstassured.DataDrivenTut">
+        <test-method is-config="true" signature="befTest()[pri:0, instance:latihan.latihanrstassured.DataDrivenTut@1b2abca6]" started-at="2022-09-12T12:51:53 ICT" name="befTest" finished-at="2022-09-12T12:51:53 ICT" duration-ms="371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- befTest -->
-        <test-method is-config="true" signature="befC()[pri:0, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="befC" finished-at="2022-09-06T19:39:34 ICT" duration-ms="1" status="PASS">
+        <test-method signature="dataProvTest(java.lang.String,java.lang.String,int)[pri:0, instance:latihan.latihanrstassured.DataDrivenTut@1b2abca6]" started-at="2022-09-12T12:51:53 ICT" name="dataProvTest" data-provider="DataProviderFirst" finished-at="2022-09-12T12:51:55 ICT" duration-ms="1190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lampard]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- befC -->
-        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="befMethod" finished-at="2022-09-06T19:39:34 ICT" duration-ms="1" status="PASS">
+        </test-method> <!-- dataProvTest -->
+        <test-method signature="dataProvTest(java.lang.String,java.lang.String,int)[pri:0, instance:latihan.latihanrstassured.DataDrivenTut@1b2abca6]" started-at="2022-09-12T12:51:55 ICT" name="dataProvTest" data-provider="DataProviderFirst" finished-at="2022-09-12T12:51:55 ICT" duration-ms="56" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bono]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- befMethod -->
-        <test-method signature="cekStokProdTest()[pri:0, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="cekStokProdTest" finished-at="2022-09-06T19:39:34 ICT" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cekStokProdTest -->
-        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="aftMethod" finished-at="2022-09-06T19:39:34 ICT" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftMethod -->
-        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="befMethod" finished-at="2022-09-06T19:39:34 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- befMethod -->
-        <test-method signature="tambahStokProdTest()[pri:1, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="tambahStokProdTest" finished-at="2022-09-06T19:39:34 ICT" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tambahStokProdTest -->
-        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="aftMethod" finished-at="2022-09-06T19:39:34 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftMethod -->
-        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="befMethod" finished-at="2022-09-06T19:39:34 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- befMethod -->
-        <test-method signature="kurangStokProdTest()[pri:2, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="kurangStokProdTest" finished-at="2022-09-06T19:39:34 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- kurangStokProdTest -->
-        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="aftMethod" finished-at="2022-09-06T19:39:34 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftMethod -->
-        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="befMethod" finished-at="2022-09-06T19:39:34 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- befMethod -->
-        <test-method signature="kalkulasiDiskonTest()[pri:3, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="kalkulasiDiskonTest" finished-at="2022-09-06T19:39:34 ICT" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- kalkulasiDiskonTest -->
-        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="aftMethod" finished-at="2022-09-06T19:39:34 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftMethod -->
-        <test-method signature="kalkulasiDiskonTestDua()[pri:4, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="kalkulasiDiskonTestDua" finished-at="2022-09-06T19:39:34 ICT" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- kalkulasiDiskonTestDua -->
-        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="befMethod" finished-at="2022-09-06T19:39:34 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- befMethod -->
-        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="aftMethod" finished-at="2022-09-06T19:39:34 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftMethod -->
-        <test-method is-config="true" signature="aftC()[pri:0, instance:ujian.ujiankedua.produkoop.BelanjaTest@7fee8714]" started-at="2022-09-06T19:39:34 ICT" name="aftC" finished-at="2022-09-06T19:39:34 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftC -->
-      </class> <!-- ujian.ujiankedua.produkoop.BelanjaTest -->
-      <class name="ujian.ujiankedua.geometri.GeometriTest">
-        <test-method is-config="true" signature="befTest()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@6283d8b8]" started-at="2022-09-06T19:39:34 ICT" name="befTest" finished-at="2022-09-06T19:39:34 ICT" duration-ms="32" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- befTest -->
-        <test-method is-config="true" signature="befC()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@6283d8b8]" started-at="2022-09-06T19:39:34 ICT" name="befC" finished-at="2022-09-06T19:39:34 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- befC -->
-        <test-method signature="luasPersegiTest()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@6283d8b8]" started-at="2022-09-06T19:39:34 ICT" name="luasPersegiTest" finished-at="2022-09-06T19:39:34 ICT" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- luasPersegiTest -->
-        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@6283d8b8]" started-at="2022-09-06T19:39:34 ICT" name="befMethod" finished-at="2022-09-06T19:39:34 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- befMethod -->
-        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@6283d8b8]" started-at="2022-09-06T19:39:34 ICT" name="aftMethod" finished-at="2022-09-06T19:39:34 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftMethod -->
-        <test-method signature="luasSegitigaTest()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@6283d8b8]" started-at="2022-09-06T19:39:34 ICT" name="luasSegitigaTest" finished-at="2022-09-06T19:39:34 ICT" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- luasSegitigaTest -->
-        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@6283d8b8]" started-at="2022-09-06T19:39:34 ICT" name="befMethod" finished-at="2022-09-06T19:39:34 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- befMethod -->
-        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@6283d8b8]" started-at="2022-09-06T19:39:34 ICT" name="aftMethod" finished-at="2022-09-06T19:39:34 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftMethod -->
-        <test-method signature="luasTrapesiumTest()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@6283d8b8]" started-at="2022-09-06T19:39:34 ICT" name="luasTrapesiumTest" finished-at="2022-09-06T19:39:34 ICT" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- luasTrapesiumTest -->
-        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@6283d8b8]" started-at="2022-09-06T19:39:34 ICT" name="befMethod" finished-at="2022-09-06T19:39:34 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- befMethod -->
-        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@6283d8b8]" started-at="2022-09-06T19:39:34 ICT" name="aftMethod" finished-at="2022-09-06T19:39:34 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftMethod -->
-        <test-method is-config="true" signature="aftC()[pri:0, instance:ujian.ujiankedua.geometri.GeometriTest@6283d8b8]" started-at="2022-09-06T19:39:34 ICT" name="aftC" finished-at="2022-09-06T19:39:34 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftC -->
-      </class> <!-- ujian.ujiankedua.geometri.GeometriTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- dataProvTest -->
+      </class> <!-- latihan.latihanrstassured.DataDrivenTut -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
