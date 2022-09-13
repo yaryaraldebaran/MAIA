@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="latihan.latihanrstassured.DataDrivenTut">
+      <class name="latihan.seleniumlat.cekFormy">
         <methods>
-          <include name="befTest"/>
-          <include name="dataProvTest"/>
+          <include name="testFormy"/>
         </methods>
-      </class> <!-- latihan.latihanrstassured.DataDrivenTut -->
+      </class> <!-- latihan.seleniumlat.cekFormy -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

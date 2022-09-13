@@ -1,5 +1,7 @@
 package latihan.seleniumlatihan;
 
+import java.util.Random;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -15,36 +17,43 @@ public class SeleniumFormy {
 		// TODO Auto-generated method stub
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
+		Random rnd = new Random();
 		
-
+//		data input using random generator 
+		String levelEduOp = "radio-button-".concat(Integer.toString(rnd.nextInt(1,4)));
+		String sexOp = "checkbox-".concat(Integer.toString(rnd.nextInt(1,4)));
+		String YearsOfExpOp = Integer.toString(rnd.nextInt(1,5));
+		String dateOp = Integer.toString(rnd.nextInt(1,26)).concat("/").concat(Integer.toString(rnd.nextInt(1,13))).concat("/").concat(Integer.toString(rnd.nextInt(1970,2022)));
+		
 		 String baseUrl = "https://formy-project.herokuapp.com/form";
 		 driver.get(baseUrl);
 		 WebElement formFirstName = driver.findElement(By.id("first-name"));
 		 WebElement lastName = driver.findElement(By.id("last-name"));
 		 WebElement JobTitle = driver.findElement(By.id("job-title"));
-		 WebElement levelEd = driver.findElement(By.id("radio-button-2"));
-		 WebElement sex = driver.findElement(By.id("checkbox-1"));
+		 WebElement levelEd = driver.findElement(By.id(levelEduOp));
+		 WebElement sex = driver.findElement(By.id(sexOp));
 		 Select yearsExperience = new Select(driver.findElement(By.id("select-menu")));
 		 WebElement DateForm = driver.findElement(By.id("datepicker"));
-		 WebElement submitBtn = driver.findElement(By.tagName("a"));
+//		 WebElement submitBtn = driver.findElement(By.partialLinkText("Submit")); // other option
+		 WebElement submitBtn = driver.findElement(By.cssSelector("a[class='btn btn-lg btn-primary']"));
 		 
 		 formFirstName.sendKeys("Sutarno");
 		 lastName.sendKeys("Jukiman");
 		 JobTitle.sendKeys("Beternak platipus");
 		 levelEd.click();
 		 sex.click();
-		 yearsExperience.selectByValue("1");
-		 DateForm.sendKeys("09/09/2020");
+		 yearsExperience.selectByValue(YearsOfExpOp);
+		 DateForm.sendKeys(dateOp);
 		 DateForm.sendKeys(Keys.ENTER);
 		 try {
-				Thread.sleep(3000);
+				Thread.sleep(4000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		 submitBtn.click();
 		 try {
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
