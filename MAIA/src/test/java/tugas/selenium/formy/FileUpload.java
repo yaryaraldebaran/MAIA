@@ -27,20 +27,11 @@ public class FileUpload {
 
   @Test
   public void testFileUpload() throws Exception {
-    driver.get("https://formy-project.herokuapp.com/fileupload");
-    driver.findElement(By.xpath("//input[@type='file']")).clear();
-    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\fakepath\\error.png");
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Choose'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("//input[@type='file']")).clear();
-    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\fakepath\\onetomany.png");
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Choose'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File upload'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("//input[@type='file']")).clear();
-    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\fakepath\\error.png");
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Choose'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File upload'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("//input[@type='file']")).clear();
-    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\fakepath\\submit method.png");
+	  driver.get("https://formy-project.herokuapp.com/fileupload");
+	    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File upload'])[1]/following::button[1]")).click();
+	    driver.findElement(By.xpath("//input[@type='file']")).clear();
+	    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\fakepath\\ujian_minggu_ketiga.png");
+	    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Choose'])[1]/following::button[1]")).click();
   }
 
   @AfterClass(alwaysRun = true)

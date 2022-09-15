@@ -29,21 +29,27 @@ public class Dropdown {
   public void testDropdown() throws Exception {
     driver.get("https://formy-project.herokuapp.com/dropdown");
     driver.findElement(By.id("dropdownMenuButton")).click();
+    Thread.sleep(1000);
     driver.findElement(By.id("autocomplete")).click();
-    driver.findElement(By.id("autocomplete")).click();
-    driver.findElement(By.id("autocomplete")).clear();
+    Thread.sleep(1000);
     driver.findElement(By.id("autocomplete")).sendKeys("Jl. Sukaninja");
+    Thread.sleep(1000);
     driver.findElement(By.id("autocomplete")).sendKeys(Keys.ENTER);
     driver.findElement(By.id("street_number")).clear();
     driver.findElement(By.id("street_number")).sendKeys("Jl. Sukaninja V");
+    Thread.sleep(1000);
     driver.findElement(By.id("route")).clear();
     driver.findElement(By.id("route")).sendKeys("Jl. Kintalayu");
+    Thread.sleep(1000);
     driver.findElement(By.id("locality")).clear();
     driver.findElement(By.id("locality")).sendKeys("Kerusda");
+    Thread.sleep(1000);
     driver.findElement(By.id("administrative_area_level_1")).clear();
     driver.findElement(By.id("administrative_area_level_1")).sendKeys("Jawa Barat");
+    Thread.sleep(1000);
     driver.findElement(By.id("postal_code")).clear();
     driver.findElement(By.id("postal_code")).sendKeys("89812");
+    Thread.sleep(1000);
     driver.findElement(By.id("country")).clear();
     driver.findElement(By.id("country")).sendKeys("Indonesia");
   }

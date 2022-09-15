@@ -1,6 +1,10 @@
 package tugas.selenium.formy;
 
 import java.util.regex.Pattern;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
 
@@ -11,7 +15,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Autocomplete {
+public class FileUploadBerhasil {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -19,31 +23,35 @@ public class Autocomplete {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-	WebDriverManager.firefoxdriver().setup();
-    driver = new FirefoxDriver();
-    baseUrl = "https://www.google.com/";
-//    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    	  WebDriverManager.firefoxdriver().setup();
+	    driver = new FirefoxDriver();
+	    baseUrl = "https://www.google.com/";
+//	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
   @Test
-  public void testFormyAutocomplete() throws Exception {
-	  driver.get("https://formy-project.herokuapp.com/autocomplete");
-	    driver.findElement(By.id("autocomplete")).click();
-	    driver.findElement(By.id("autocomplete")).clear();
-	    driver.findElement(By.id("autocomplete")).sendKeys("Jl. Kualanamu no 29");
-	    driver.findElement(By.id("street_number")).clear();
-	    driver.findElement(By.id("street_number")).sendKeys("Jl. Kualanami");
-	    driver.findElement(By.id("route")).clear();
-	    driver.findElement(By.id("route")).sendKeys("Jalan Kuala Abu");
-	    driver.findElement(By.id("locality")).clear();
-	    driver.findElement(By.id("locality")).sendKeys("Jatinanjar");
-	    driver.findElement(By.id("administrative_area_level_1")).clear();
-	    driver.findElement(By.id("administrative_area_level_1")).sendKeys("Jawa Barat");
-	    driver.findElement(By.id("postal_code")).clear();
-	    driver.findElement(By.id("postal_code")).sendKeys("43387");
-	    driver.findElement(By.id("country")).clear();
-	    driver.findElement(By.id("country")).sendKeys("Indonesia");
-	    driver.findElement(By.id("country")).sendKeys(Keys.ENTER);
+  public void testFileUpload() throws Exception {
+	  
+	Robot robot= new Robot();
+	driver.get("https://formy-project.herokuapp.com/fileupload");
+	driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File upload'])[1]/following::button[1]")).click();
+  
+	StringSelection selection = new StringSelection("C:\\Users\\NEXSOFT\\Downloads\\File_Upload.txt");
+	Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection,null);
+	//
+	    robot.setAutoDelay(1000);
+
+	    robot.keyPress(KeyEvent.VK_CONTROL);
+	    robot.keyPress(KeyEvent.VK_V);
+
+	    robot.keyRelease(KeyEvent.VK_CONTROL);
+	    robot.keyRelease(KeyEvent.VK_V);
+
+	    robot.setAutoDelay(800);
+
+	    robot.keyPress(KeyEvent.VK_ENTER);
+	    robot.keyRelease(KeyEvent.VK_ENTER);    
+	    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Choose'])[1]/following::button[1]")).click();
   }
 
   @AfterClass(alwaysRun = true)
