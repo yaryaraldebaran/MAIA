@@ -22,7 +22,8 @@ public class XpathPrecedingSiblingAxis {
 	  		for (int i = 0; i<input.size();i++) {
 				  System.out.println(input.get(i).getAttribute("value"));
 			  }
-			 
+			// untuk value 4 -> 0,1,2,3 minus dirinya snediri dan berhenti di dirinya sendiri
+	  		// untuk value 2 -> 0,1 mnus dirinya sendiri dan berhenti di dirinya sendiri
 
 
 		 System.out.println("================================================================");

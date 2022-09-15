@@ -11,7 +11,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class FormyAutocomplete {
+public class FileUpload {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -26,32 +26,21 @@ public class FormyAutocomplete {
   }
 
   @Test
-  public void testFormyAutocomplete() throws Exception {
-    driver.get("https://formy-project.herokuapp.com/autocomplete");
-    driver.findElement(By.id("autocomplete")).click();
-    driver.findElement(By.id("autocomplete")).clear();
-    driver.findElement(By.id("autocomplete")).sendKeys("Sukabumi");
-    driver.findElement(By.id("autocomplete")).sendKeys(Keys.ENTER);
-    driver.findElement(By.id("locality")).click();
-    driver.findElement(By.id("autocomplete")).click();
-    driver.findElement(By.id("street_number")).clear();
-    driver.findElement(By.id("street_number")).sendKeys("Jl. Sukakura");
-    driver.findElement(By.id("route")).click();
-    driver.findElement(By.id("route")).clear();
-    driver.findElement(By.id("route")).sendKeys("Jl. Kibulanamu");
-    driver.findElement(By.id("locality")).click();
-    driver.findElement(By.id("locality")).clear();
-    driver.findElement(By.id("locality")).sendKeys("Kintayaru");
-    driver.findElement(By.id("administrative_area_level_1")).click();
-    driver.findElement(By.id("administrative_area_level_1")).clear();
-    driver.findElement(By.id("administrative_area_level_1")).sendKeys("Rutaji");
-    driver.findElement(By.id("postal_code")).click();
-    driver.findElement(By.id("postal_code")).clear();
-    driver.findElement(By.id("postal_code")).sendKeys("898789");
-    driver.findElement(By.id("country")).click();
-    driver.findElement(By.id("country")).clear();
-    driver.findElement(By.id("country")).sendKeys("Nigeria");
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Autocomplete'])[2]/following::div[1]")).click();
+  public void testFileUpload() throws Exception {
+    driver.get("https://formy-project.herokuapp.com/fileupload");
+    driver.findElement(By.xpath("//input[@type='file']")).clear();
+    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\fakepath\\error.png");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Choose'])[1]/following::button[1]")).click();
+    driver.findElement(By.xpath("//input[@type='file']")).clear();
+    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\fakepath\\onetomany.png");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Choose'])[1]/following::button[1]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File upload'])[1]/following::button[1]")).click();
+    driver.findElement(By.xpath("//input[@type='file']")).clear();
+    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\fakepath\\error.png");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Choose'])[1]/following::button[1]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File upload'])[1]/following::button[1]")).click();
+    driver.findElement(By.xpath("//input[@type='file']")).clear();
+    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\fakepath\\submit method.png");
   }
 
   @AfterClass(alwaysRun = true)

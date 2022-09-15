@@ -18,14 +18,15 @@ public class XpathPrecedingAxis {
 		 String baseUrl = "https://formy-project.herokuapp.com/form";
 		 driver.get(baseUrl);
 
-		 List <WebElement> label = driver.findElements(By.xpath("//input[@id= 'job-title']//preceding::label"));
-		 for (int i = 0; i<label.size();i++) {
-		 System.out.println(label.get(i).getText());
-		 }
+//		 List <WebElement> label = driver.findElements(By.xpath("//input[@id= 'job-title']//preceding::label"));
+//		 for (int i = 0; i<label.size();i++) {
+//		 System.out.println(label.get(i).getText());
+//		 }
+		 // NGAMBIL INDEX KE ATAS
 
 		 System.out.println("================================================================");
-		 System.out.println(driver.findElement(By.xpath("//input[@id = 'job-title']//preceding::label[3]")).getText());
+		 System.out.println(driver.findElement(By.xpath("//input[@id = 'job-title']//preceding::label[1]")).getText());
 		 System.out.println("================================================================");
-		 System.out.println(driver.findElement(By.xpath("//input[@id = 'job-title']//preceding::label")).getText());
+		 System.out.println(driver.findElement(By.xpath("//input[@id = 'radio-button-1']//preceding::label[2]")).getText());
 	}
 }

@@ -11,7 +11,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class FormyAutocomplete {
+public class Autocomplete {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -19,10 +19,10 @@ public class FormyAutocomplete {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-    	  WebDriverManager.firefoxdriver().setup();
-	    driver = new FirefoxDriver();
-	    baseUrl = "https://www.google.com/";
-//	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	WebDriverManager.firefoxdriver().setup();
+    driver = new FirefoxDriver();
+    baseUrl = "https://www.google.com/";
+//    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
   @Test
