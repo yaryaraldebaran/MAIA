@@ -30,7 +30,7 @@ public class LoginPage {
 	private WebElement rqrd;
 	@FindBy(xpath = "//h5[@class='oxd-text oxd-text--h5 orangehrm-login-title']")
 	private WebElement loginTitle;
-	//page object
+	//page object untuk setiap aksi
 	public void login(String username, String password) {
 		this.username.sendKeys(username);
 		this.password.sendKeys(password);

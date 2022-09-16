@@ -1,5 +1,5 @@
 package latihan.latihanrstassured;
-
+import latihan.utils.*;
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
@@ -12,7 +12,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;
-import restassured.utils.ExcelReader;
 
 public class PostDataFromExcel {
 
@@ -27,7 +26,7 @@ public class PostDataFromExcel {
 	{
 		baseURI = "http://localhost:3000/";
 		req = new JSONObject();
-		String excelPath = "./data/DataDriven.xlsx";
+		String excelPath = "C:\\Users\\NEXSOFT\\Documents\\lmsJuaraKoding\\workspaces\\workspaceSQABootcamp\\NexSOFT\\MAIA\\src\\test\\java\\latihan\\latihanrstassured\\data\\DataDriven.xlsx";
 		String sheetName = "Sheet1";
 		excelReader = new ExcelReader(excelPath, sheetName);
 		intRowNums = excelReader.getRowCount();

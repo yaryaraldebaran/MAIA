@@ -33,7 +33,7 @@ public class TestAutoComplete {
 		//alur pertama pasti sngleton.getinstance
 		DriverSingleton.getInstance(Constants.CHROME);
 		driver = DriverSingleton.getDriver();
-		driver.get(Constants.URIAUTOCOMPLETE);
+		driver.get(Constants.URLAUTOCOMPLETE);
 		apg = new AutocompletePage();	
 	}
 	
