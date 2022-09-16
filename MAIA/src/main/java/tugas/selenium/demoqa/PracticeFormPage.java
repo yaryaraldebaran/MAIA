@@ -60,7 +60,8 @@ public class PracticeFormPage {
 	private WebElement music;
 	@FindBy (xpath = "//input[@type='file']")
 	private WebElement uploadPicture;
-
+	@FindBy(xpath="/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[1]")
+	private WebElement txtDoneUpload;
 
 	@FindBy(id = "currentAddress")
 	private WebElement currentAddress;
@@ -160,8 +161,9 @@ public class PracticeFormPage {
 		List<WebElement> selectedItemCity = driver.findElements(By.id("react-select-4-option-1"));
 		selectedItemCity.get(0).click();
 		submitBtn.click();
-		closeLrgMdl.click();
 	}
 	
-	
+	public String getTxtDoneUpload() {
+		return txtDoneUpload.getText();
+	}
 }

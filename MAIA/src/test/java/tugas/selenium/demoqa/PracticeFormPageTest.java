@@ -1,5 +1,7 @@
 package tugas.selenium.demoqa;
 
+import static org.testng.Assert.assertTrue;
+
 import java.awt.AWTException;
 
 import org.openqa.selenium.WebDriver;
@@ -38,5 +40,6 @@ public class PracticeFormPageTest {
 			e.printStackTrace();
 		}
 		Thread.sleep(5000);
+		assertTrue(prf.getTxtDoneUpload().contains("Thanks"));
 	}
 }
