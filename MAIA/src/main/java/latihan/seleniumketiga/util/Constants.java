@@ -15,4 +15,7 @@ public class Constants {
 	public static final String URLAMAZON = "https://katalon-test.s3.amazonaws.com/aut/html/form.html";
 	public static final String URLBUTTONS = "https://demoqa.com/buttons";
 	public static final String URLPRACTICEFORM = "https://demoqa.com/automation-practice-form";
+	
+	//UJIAN KEEMPAT NO 3
+	public static final String URLNOPCOMMERCE = "https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F";
 }
