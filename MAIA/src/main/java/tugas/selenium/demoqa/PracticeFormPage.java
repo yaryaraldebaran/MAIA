@@ -73,6 +73,7 @@ public class PracticeFormPage {
 	private WebElement submitBtn;
 	@FindBy(id = "closeLargeModal")
 	private WebElement closeLrgMdl;
+	
 	private WebElement city;
 	
 	public void isiTanggal(String tgl) {
@@ -126,6 +127,7 @@ public class PracticeFormPage {
 			rb.keyRelease(KeyEvent.VK_CONTROL);
 			rb.keyRelease(KeyEvent.VK_SUBTRACT);
 		}
+		Thread.sleep(2000);
 		this.firstName.sendKeys(fName);
 		this.lastName.sendKeys(lName);
 		this.userEmail.sendKeys(emailUser);

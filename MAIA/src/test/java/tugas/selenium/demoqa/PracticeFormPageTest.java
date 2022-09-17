@@ -31,10 +31,13 @@ public class PracticeFormPageTest {
 	@Test
 	public void testPracticeForm() throws InterruptedException, AWTException {
 		try {
+			// ganti direktori file gambar disini
 			String directoryFile = "C:\\Users\\NEXSOFT\\Pictures\\BubbleSort1.png";
+			String current = System.getProperty("user.dir");
+			String directoryDua = current.concat("\\Data\\BubbleSort.png");
 			prf.isiForm("Jukidi","Murod","mukidimurod@hayo.com",
 					"Pria","0812312318","21 Desember 1998",
-					"Math",2,directoryFile,"Jl. Kasuari no 34","Ya gitu hehe" );
+					"Math",2,directoryDua,"Jl. Kasuari no 34","Ya gitu hehe" );
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
