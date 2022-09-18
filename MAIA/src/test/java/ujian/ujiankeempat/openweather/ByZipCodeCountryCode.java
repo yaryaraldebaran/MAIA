@@ -53,12 +53,11 @@ public class ByZipCodeCountryCode {
 	
 	@Test(dataProvider = "DataZipCode")
 	public void testGet(String zipCode, String idCountry) {
-		req.put("zipCode", zipCode);
-		req.put("idCountry",idCountry);
 		
 		String apiKey = "169188bdd54dec8d21ed024fdac327ce";
 		given().
-			param("zip",req.get("zipCode").toString(),req.get("idCountry").toString()).and().param("appid", apiKey).
+			param("zip",zipCode,idCountry).
+			and().param("appid", apiKey).
 			get("/data/2.5/weather").then().
 			statusCode(200).log().all();
 	}

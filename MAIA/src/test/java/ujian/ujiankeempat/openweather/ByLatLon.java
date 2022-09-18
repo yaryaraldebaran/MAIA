@@ -56,14 +56,9 @@ public class ByLatLon {
 	
 	@Test(dataProvider = "DataLonLat")
 	public void testGet(String namaKota, String idKota,String longtd, String lttd) {
-		req.put("namaKota", namaKota);
-		req.put("idKota",idKota);
-		req.put("lon", longtd);
-		req.put("lat", lttd);
-		
 		String apiKey = "169188bdd54dec8d21ed024fdac327ce";
 		given().
-			param("lon",req.get("lon").toString()).and().param("lat", req.get("lat").toString()).and().param("appid", apiKey).
+			param("lon",longtd).and().param("lat", lttd).and().param("appid", apiKey).
 			get("/data/2.5/weather").then().
 			statusCode(200).log().all();
 	}

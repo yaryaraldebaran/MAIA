@@ -56,16 +56,13 @@ public class ByLatLonLang {
 	
 	@Test(dataProvider = "DataLonLat")
 	public void testGet(String lat, String lon,String lang) {
-		req.put("lat", lat);
-		req.put("lon",lon);
-		req.put("lang", lang);
 		
 		String apiKey = "169188bdd54dec8d21ed024fdac327ce";
 		given().
-			param("lat", req.get(lat))
-			.and().param("lon",req.get(lon))
-			.and().param("lang", req.get(lang))
-			.and().param("appid", apiKey).
+			param("lat",lat)
+			.and().param("lon",lon)
+			.and().param("lang",lang)
+			.and().param("appid",apiKey).
 			get("/data/2.5/weather").then().
 			statusCode(200).log().all();
 	}
