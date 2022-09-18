@@ -1,4 +1,4 @@
-package ujian.ujiankeempat;
+package ujian.ujiankeempat.openweather;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import latihan.utils.ExcelReader;
 
-public class ByCityId {
+public class ByCityName {
 	private ExcelReader excelReader;
 	private Object[][] dDriven;
 	private int intColumnNums;
@@ -24,7 +24,7 @@ public class ByCityId {
 	public void befTest() {
 		req = new JSONObject();
 		baseURI = "https://api.openweathermap.org";
-		String excelPath = "C:\\Users\\NEXSOFT\\Documents\\lmsJuaraKoding\\Ujian\\Ujian_Keempat\\ByCityId.xlsx";
+		String excelPath = "C:\\Users\\NEXSOFT\\Documents\\lmsJuaraKoding\\Ujian\\Ujian_Keempat\\ByCityName.xlsx";
 		String sheetName = "Sheet1";
 		excelReader = new ExcelReader(excelPath, sheetName);
 		intRowNums = excelReader.getRowCount();
@@ -52,16 +52,15 @@ public class ByCityId {
 	}
 	
 	@Test(dataProvider = "DataLonLat")
-	public void testGet(String idKota, String namaKota,String idNegara, String longt, String lttd) {
-		req.put("idKota", idKota);
-		req.put("namaKota",namaKota);
-		req.put("idNegara", idNegara);
-		req.put("lon",longt);
+	public void testGet(String namaKota, String idNegara,String longtd, String lttd) {
+		req.put("namaKota", namaKota);
+		req.put("idKota",idNegara);
+		req.put("lon", longtd);
 		req.put("lat", lttd);
 		
 		String apiKey = "169188bdd54dec8d21ed024fdac327ce";
 		given().
-			param("id",req.get("idKota").toString()).and().param("appid", apiKey).
+			param("q",req.get("namaKota").toString()).and().param("appid", apiKey).
 			get("/data/2.5/weather").then().
 			statusCode(200).log().all();
 	}
