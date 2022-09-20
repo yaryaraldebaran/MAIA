@@ -12,7 +12,8 @@ import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import latihan.seleniumketiga.DriverSingleton;
+import latihan.cucumber.framework.connection.DriverSingleton;
+
 
 public class ButtonsPage {
 	private WebDriver driver;

@@ -5,7 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import latihan.seleniumketiga.DriverSingleton;
+import latihan.cucumber.framework.connection.DriverSingleton;
+
 
 public class TextBoxPage {
 	private WebDriver driver;

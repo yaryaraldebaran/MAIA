@@ -4,9 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import latihan.cucumber.framework.connection.DriverSingleton;
+import latihan.cucumber.framework.constant.Constants;
 import latihan.selenium.framework.AutocompletePage;
-import latihan.seleniumketiga.DriverSingleton;
-import latihan.seleniumketiga.util.Constants;
 
 public class RadioButtonPageTest {
 	public static WebDriver driver;

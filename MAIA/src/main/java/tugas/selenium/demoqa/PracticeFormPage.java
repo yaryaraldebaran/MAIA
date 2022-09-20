@@ -13,7 +13,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import latihan.seleniumketiga.DriverSingleton;
+import latihan.cucumber.framework.connection.DriverSingleton;
+
 
 public class PracticeFormPage {
 	private WebDriver driver;
