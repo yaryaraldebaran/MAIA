@@ -24,4 +24,9 @@ public class Constants {
 		
 		//UJIAN KEEMPAT NO 3
 		public static final String URLNOPCOMMERCE = "https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F";
+	// DEMOQA UJIAN KELIMA
+		public static final String URLSHOPDEMOQA = "https://shop.demoqa.com/";
+		public static final String URLREGISTERSHOPDEMOQA="https://shop.demoqa.com/my-account/";
+		public static final String URLCOMMENT="https://shop.demoqa.com/2016/05/09/spring-color-bag-trends-summer-2016/";
+		public static final String GLOB_PARAM_DELAY = "y";
 }

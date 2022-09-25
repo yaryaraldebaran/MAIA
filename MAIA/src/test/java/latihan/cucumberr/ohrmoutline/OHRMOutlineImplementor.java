@@ -29,7 +29,7 @@ public class OHRMOutlineImplementor {
 	}
 		
 	
-	@When("User go to web hrm")
+	@When("User go to web hrm outline")
 	public void user_go_to_web_hrm() {
 	    driver.get(Constants.URLOHRM);
 	    extentTest.log(LogStatus.PASS, "User go to web hrm");

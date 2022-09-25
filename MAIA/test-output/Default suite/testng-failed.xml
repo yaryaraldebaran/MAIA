@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="latihan.cucumberr.loginrunner.LoginRunner">
+      <class name="ujian.ujiankelima.selenium.DemoQAShopTest">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="pageObject"/>
+          <include name="shopDemoQALogin"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- latihan.cucumberr.loginrunner.LoginRunner -->
+      </class> <!-- ujian.ujiankelima.selenium.DemoQAShopTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

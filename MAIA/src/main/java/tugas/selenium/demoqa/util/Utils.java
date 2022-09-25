@@ -1,4 +1,4 @@
-package latihan.cucumber.framework.utils;
+package tugas.selenium.demoqa.util;
 
 import java.io.File;
 import java.io.IOException;
@@ -37,5 +37,4 @@ public class Utils {
 			}
 		}		
 	}
-	
 }

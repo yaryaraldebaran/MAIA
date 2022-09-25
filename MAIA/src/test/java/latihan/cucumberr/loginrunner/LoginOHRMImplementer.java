@@ -29,6 +29,7 @@ public class LoginOHRMImplementer {
 	public void user_go_to_web_hrm() {
 		driver.get(Constants.URLOHRM);
 		assertTrue(ohrm.getTextLogin().contains("Login"));
+		//agar tercatat lognya
 		extentTest.log(LogStatus.PASS, "User go to web hrm");
 	}
 	@And("User enter username password valid")
